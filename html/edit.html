@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head>
+   <meta charset="utf-8">
+   <meta name="description" content="Edit">
+   <title>Edit</title>
+   <style>
+      h1, h3 {
+         text-align: center;
+      }
+
+      p {
+         padding: 0 4px 0 4px;
+      }
+
+      input[type=text], textarea {
+         width: 98%;
+      }
+
+      textarea {
+         resize: none;
+      }
+
+      @media only screen and (min-width:35em){
+         h1, h3 {
+            text-align: left;
+         }
+
+         p {
+            padding: 0;
+         }
+
+         input[type=text], textarea {
+            width: 500px;
+         }
+      }
+   </style>
+</head><body>
+   <h1>Edit - {{.ID}}</h1>
+   <hr>
+   <form action="/saveEdit?id={{.ID}}" method="POST">
+      <p><label for="title">Title:</label></p>
+      <div><input type="text" name="title" value="{{.Title}}" size="80" /></div>
+      <p><label for="body">Body:</label></p>
+      <div><textarea name="body" rows="20" cols="80">{{.Body}}</textarea></div>
+      <p><input type="submit" value="Save"></p>
+   </form>
+   <hr>
+   <h3><a href="/admin">Cancel</a></h3>
+   <script></script>
+</body></html>

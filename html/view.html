@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head>
+   <meta charset="utf-8">
+   <meta name="description" content="{{.Title}}">
+   <title>{{.Title}}</title>
+   <style>
+      h2, h4 {
+         text-align: center;
+      }
+
+      p {
+         padding: 0 4px 0 4px;;
+      }
+
+      @media only screen and (min-width:35em){
+         h2, h4 {
+            text-align: left;
+         }
+
+         p {
+            padding: 0;
+         }
+      }
+   </style>
+</head><body>
+   <h2>{{.Title}}</h2>
+   <hr>
+   <p>{{.Body}}</p>
+   <hr>
+   <h4><a href="/">Home</a></h4>
+   <script></script>
+</body></html>
