@@ -10,7 +10,7 @@ I recommend you set your theme to dark or use a dark reader plugin for your brow
 
 The URL will bring you to the root page, which lists all the existing posts one after the other. The link element shows the title of the post, and underneath the link the content is displayed for only the first post. Clicking on the title brings you to a page where you can view the post by itself. Click Login at the bottom to access the admin section, where you can manage your posts.
 
-More todo ..
+More todo ..  
 Add some AJAX to reduce full page loads to a minimum  
 Improve the templating structure  
 Enhance the default theme  
