@@ -14,5 +14,7 @@ More todo ..
 Add some AJAX to reduce full page loads to a minimum  
 Improve the templating structure  
 Enhance the default theme  
+Add second server with goroutines for proxying admin requests  
+Add optional dark theme  
 
 Source of demo text - loremipsum.io
