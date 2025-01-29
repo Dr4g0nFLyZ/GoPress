@@ -195,9 +195,6 @@ func saveEdit(w http.ResponseWriter, r *http.Request) {
    title := r.FormValue("title")
    body := r.FormValue("body")
 
-   // p := Post{ID: id, Title: title, Body: body}
-   // posts = append(posts, p)
-
    for i, _ := range posts {
       if posts[i].ID == id {
          posts[i].Title = title
