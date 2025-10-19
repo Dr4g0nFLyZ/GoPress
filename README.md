@@ -1,4 +1,4 @@
-# gopress
+# GoPress
 Blog/CMS
 
 ## todo..
