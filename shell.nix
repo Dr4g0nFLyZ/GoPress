@@ -1,21 +1,15 @@
-# shell.nix
 { pkgs ? import <nixpkgs> {} }:
 
 pkgs.mkShell {
-   name = "go-dev";
-  
-   nativeBuildInputs = [
-      pkgs.pkg-config
-   ];
-
-   buildInputs = with pkgs; [
-      go
-      gnumake 
+  buildInputs = with pkgs; [
+    go
+    gopls
+    sqlite-interactive
+    protobuf
   ];
 
-   shellHook = ''
-      echo "Entering Golang development shell ($(go version))"
-      export GOPATH=$(pwd)/.go-packages
-      mkdir -p $GOPATH
-   '';
+  shellHook = ''
+    echo "Entering Golang development shell with Go version: $(go version)"
+    export GOPATH=$HOME/go
+  '';
 }
